@@ -1,5 +1,5 @@
-# DevOps Capstone Project – 01 (PART 1)
-## Part 1: Application and Container Building
+# DevOps Capstone Project – 01 (PART 1: Server)
+## Part 1: Application and Container Building for Server
 
 ### 1.0 Creating a new directory for this project called “project1”, where all the files related to our work will be stored.
 
