@@ -1,0 +1,19 @@
+name: Server CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and push Docker image
+        run: |
+          docker build -t your-registry/your-image:latest .
+          docker login -u your-dockerhub-username -p your-dockerhub-password
+          docker push your-registry/your-image:latest
